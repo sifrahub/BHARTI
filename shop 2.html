@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><li><a href="index.html"BHARTI JEWELLERY</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@tailwindcss/browser@latest"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .banner {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .banner video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 1;
+        }
+        .banner-content {
+            position: relative;
+            z-index: 2;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        .banner-content h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .banner-content p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+        .banner-content button {
+            padding: 15px 30px;
+            font-size: 1rem;
+            background-color: #000000ea;
+            color: #ffffff;
+            border: none;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .banner-content button:hover {
+            background-color: #1a202c;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+    <header class="bg-gray-800 text-white py-4 flex justify-between items-center shadow-md sticky top-0 z-10 rounded-md">
+        <div class="logo text-xl font-bold ml-4">
+            <img src="https://via.placeholder.com/50" alt="BJ" class="inline-block mr-2 rounded-full">
+            BHARTI JEWELLERY 
+        </div>
+        <nav class="mr-4">
+            <ul class="flex space-x-4">
+                <li><a href="index.html" class="hover:text-gray-300 no-underline">HOME</a></li>
+                <li><a href="#about" class="hover:text-gray-300 no-underline">About Us</a></li>
+                <li><a href="#contact" class="hover:text-gray-300 no-underline">Contact Us</a></li>
+                 <li><a href="LOGIN.html" class="hover:text-gray-300 no-underline">Login</a></li>
+                <li><a href="SIGN UP.html" class="hover:text-gray-300 no-underline">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="banner rounded-md">
+        <video autoplay loop muted>
+            <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="banner-content">
+            <h1>New Trending Collection</h1>
+            <p>Find the perfect piece for every occasion.</p>
+            <button onclick="window.location.href='#products'">Shop Now</button>
+        </div>
+    </section>
+
+    <section id="products" class="products py-16 px-4 text-center rounded-md">
+        <h2 class="text-2xl font-semibold mb-8 text-gray-300">Featured Products</h2>
+        <div class="product-grid grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+            <div class="product-card bg-gray-800 rounded-lg shadow-md p-4 flex flex-col justify-between">
+                <img src="images/product/28.jpg" alt="Ring" class="rounded-md mb-4">
+                <h3 class="text-xl font-semibold text-white mb-2">Elegant Ring</h3>
+                <p class="text-gray-400 mb-2">Price: $250</p>
+                <button class="add-to-cart bg-gray-700 text-white py-2 px-4 rounded-full hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-75 mb-2">Add to Cart</button>
+                <button class="bg-green-600 text-white py-2 px-4 rounded-full hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75" onclick="alert('Proceeding to checkout for Elegant Ring')">Buy Now</button>
+            </div>
+            <div class="product-card bg-gray-800 rounded-lg shadow-md p-4 flex flex-col justify-between">
+                <img src="images/product/33.jpg" alt="Necklace" class="rounded-md mb-4">
+                <h3 class="text-xl font-semibold text-white mb-2">Classic Necklace</h3>
+                <p class="text-gray-400 mb-2">Price: $300</p>
+                <button class="add-to-cart bg-gray-700 text-white py-2 px-4 rounded-full hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-75 mb-2">Add to Cart</button>
+                <button class="bg-green-600 text-white py-2 px-4 rounded-full hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75" onclick="alert('Proceeding to checkout for Classic Necklace')">Buy Now</button>
+            </div>
+            <div class="product-card bg-gray-800 rounded-lg shadow-md p-4 flex flex-col justify-between">
+                <img src="images/product/35.jpg" alt="Earrings" class="rounded-md mb-4">
+                <h3 class="text-xl font-semibold text-white mb-2">Dazzling Earrings</h3>
+                <p class="text-gray-400 mb-2">Price: $180</p>
+                <button class="add-to-cart bg-gray-700 text-white py-2 px-4 rounded-full hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-75 mb-2">Add to Cart</button>
+                <button class="bg-green-600 text-white py-2 px-4 rounded-full hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75" onclick="alert('Proceeding to checkout for Dazzling Earrings')">Buy Now</button>
+            </div>
+            <div class="product-card bg-gray-800 rounded-lg shadow-md p-4 flex flex-col justify-between">
+                <img src="images/product/38.jpg" alt="Bracelet" class="rounded-md mb-4">
+                <h3 class="text-xl font-semibold text-white mb-2">Stylish Bracelet</h3>
+                <p class="text-gray-400 mb-2">Price: $220</p>
+                <button class="add-to-cart bg-gray-700 text-white py-2 px-4 rounded-full hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-75 mb-2">Add to Cart</button>
+                <button class="bg-green-600 text-white py-2 px-4 rounded-full hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75" onclick="alert('Proceeding to checkout for Stylish Bracelet')">Buy Now</button>
+            </div>
+            <div class="product-card bg-gray-800 rounded-lg shadow-md p-4 flex flex-col justify-between">
+                <img src="images/product/42.jpg" alt="Brooch" class="rounded-md mb-4">
+                <h3 class="text-xl font-semibold text-white mb-2">Vintage Brooch</h3>
+                <p class="text-gray-400 mb-2">Price: $150</p>
+                <button class="add-to-cart bg-gray-700 text-white py-2 px-4 rounded-full hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-75 mb-2">Add to Cart</button>
+                <button class="bg-green-600 text-white py-2 px-4 rounded-full hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75" onclick="alert('Proceeding to checkout for Vintage Brooch')">Buy Now</button>
+            </div>
+            <div class="product-card bg-gray-800 rounded-lg shadow-md p-4 flex flex-col justify-between">
+                <img src="images/product/43.jpg" alt="Anklet" class="rounded-md mb-4">
+                <h3 class="text-xl font-semibold text-white mb-2">Elegant Anklet</h3>
+                <p class="text-gray-400 mb-2">Price: $120</p>
+                <button class="add-to-cart bg-gray-700 text-white py-2 px-4 rounded-full hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-75 mb-2">Add to Cart</button>
+                <button class="bg-green-600 text-white py-2 px-4 rounded-full hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75" onclick="alert('Proceeding to checkout for Elegant Anklet')">Buy Now</button>
+            </div>
+            <div class="product-card bg-gray-800 rounded-lg shadow-md p-4 flex flex-col justify-between">
+                <img src="images/blog/2.jpg" alt="Pendant" class="rounded-md mb-4">
+                <h3 class="text-xl font-semibold text-white mb-2">Stylish Pendant</h3>
+                <p class="text-gray-400 mb-2">Price: $200</p>
+                <button class="add-to-cart bg-gray-700 text-white py-2 px-4 rounded-full hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-75 mb-2">Add to Cart</button>
+                <button class="bg-green-600 text-white py-2 px-4 rounded-full hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75" onclick="alert('Proceeding to checkout for Stylish Pendant')">Buy Now</button>
+            </div>
+            <div class="product-card bg-gray-800 rounded-lg shadow-md p-4 flex flex-col justify-between">
+                <img src="images/blog/3.jpg" alt="Tiara" class="rounded-md mb-4">
+                <h3 class="text-xl font-semibold text-white mb-2">Royal Tiara</h3>
+                <p class="text-gray-400 mb-2">Price: $500</p>
+                <button class="add-to-cart bg-gray-700 text-white py-2 px-4 rounded-full hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-75 mb-2">Add to Cart</button>
+                <button class="bg-green-600 text-white py-2 px-4 rounded-full hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75" onclick="alert('Proceeding to checkout for Royal Tiara')">Buy Now</button>
+            </div>
+            <div class="product-card bg-gray-800 rounded-lg shadow-md p-4 flex flex-col justify-between">
+                <img src="images/banner/1.jpg" alt="Cufflinks" class="rounded-md mb-4">
+                <h3 class="text-xl font-semibold text-white mb-2">Elegant Cufflinks</h3>
+                <p class="text-gray-400 mb-2">Price: $320</p>
+                <button class="add-to-cart bg-gray-700 text-white py-2 px-4 rounded-full hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-75 mb-2">Add to Cart</button>
+                <button class="bg-green-600 text-white py-2 px-4 rounded-full hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75" onclick="alert('Proceeding to checkout for Elegant Cufflinks')">Buy Now</button>
+            </div>
+            <div class="product-card bg-gray-800 rounded-lg shadow-md p-4 flex flex-col justify-between">
+                <img src="images/product/11.jpg" alt="Locket" class="rounded-md mb-4">
+                <h3 class="text-xl font-semibold text-white mb-2">Heart Locket</h3>
+                <p class="text-gray-400 mb-2">Price: $175</p>
+                <button class="add-to-cart bg-gray-700 text-white py-2 px-4 rounded-full hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-75 mb-2">Add to Cart</button>
+                <button class="bg-green-600 text-white py-2 px-4 rounded-full hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75" onclick="alert('Proceeding to checkout for Heart Locket')">Buy Now</button>
+            </div>
+            <div class="product-card bg-gray-800 rounded-lg shadow-md p-4 flex flex-col justify-between">
+                <img src="images/product/14.jpg" alt="Charm" class="rounded-md mb-4">
+                <h3 class="text-xl font-semibold text-white mb-2">Silver Charm</h3>
+                <p class="text-gray-400 mb-2">Price: $80</p>
+                <button class="add-to-cart bg-gray-700 text-white py-2 px-4 rounded-full hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-75 mb-2">Add to Cart</button>
+                <button class="bg-green-600 text-white py-2 px-4 rounded-full hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75" onclick="alert('Proceeding to checkout for Silver Charm')">Buy Now</button>
+            </div>
+            <div class="product-card bg-gray-800 rounded-lg shadow-md p-4 flex flex-col justify-between">
+                <img src="images/product/16.jpg" alt="Beads" class="rounded-md mb-4">
+                <h3 class="text-xl font-semibold text-white mb-2">Colorful Beads</h3>
+                <p class="text-gray-400 mb-2">Price: $50</p>
+                <button class="add-to-cart bg-gray-700 text-white py-2 px-4 rounded-full hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-75 mb-2">Add to Cart</button>
+                <button class="bg-green-600 text-white py-2 px-4 rounded-full hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75" onclick="alert('Proceeding to checkout for Colorful Beads')">Buy Now</button>
+            </div>
+            <div class="product-card bg-gray-800 rounded-lg shadow-md p-4 flex flex-col justify-between">
+                <img src="images/product/20.jpg" alt="Diamond Ring" class="rounded-md mb-4">
+                <h3 class="text-xl font-semibold text-white mb-2">Diamond Ring</h3>
+                <p class="text-gray-400 mb-2">Price: $1000</p>
+                <button class="add-to-cart bg-gray-700 text-white py-2 px-4 rounded-full hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-75 mb-2">Add to Cart</button>
+                <button class="bg-green-600 text-white py-2 px-4 rounded-full hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75" onclick="alert('Proceeding to checkout for Diamond Ring')">Buy Now</button>
+            </div>
+            <div class="product-card bg-gray-800 rounded-lg shadow-md p-4 flex flex-col justify-between">
+                <img src="images/product/71.jpg" alt="Diamond Necklace" class="rounded-md mb-4">
+                <h3 class="text-xl font-semibold text-white mb-2">Diamond Necklace</h3>
+                <p class="text-gray-400 mb-2">Price: $1500</p>
+                <button class="add-to-cart bg-gray-700 text-white py-2 px-4 rounded-full hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-75 mb-2">Add to Cart</button>
+                <button class="bg-green-600 text-white py-2 px-4 rounded-full hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75" onclick="alert('Proceeding to checkout for Diamond Necklace')">Buy Now</button>
+            </div>
+            <div class="product-card bg-gray-800 rounded-lg shadow-md p-4 flex flex-col justify-between">
+                <img src="images/product/4.jpg" alt="Diamond Earrings" class="rounded-md mb-4">
+                <h3 class="text-xl font-semibold text-white mb-2">Diamond Earrings</h3>
+                <p class="text-gray-400 mb-2">Price: $1200</p>
+                <button class="add-to-cart bg-gray-700 text-white py-2 px-4 rounded-full hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-75 mb-2">Add to Cart</button>
+                <button class="bg-green-600 text-white py-2 px-4 rounded-full hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75" onclick="alert('Proceeding to checkout for Diamond Earrings')">Buy Now</button>
+            </div>
+            <div class="product-card bg-gray-800 rounded-lg shadow-md p-4 flex flex-col justify-between">
+                <img src="images/product/10.jpg" alt="Diamond Bracelet" class="rounded-md mb-4">
+                <h3 class="text-xl font-semibold text-white mb-2">Diamond Bracelet</h3>
+                <p class="text-gray-400 mb-2">Price: $1300</p>
+                <button class="add-to-cart bg-gray-700 text-white py-2 px-4 rounded-full hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-75 mb-2">Add to Cart</button>
+                <button class="bg-green-600 text-white py-2 px-4 rounded-full hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75" onclick="alert('Proceeding to checkout for Diamond Bracelet')">Buy Now</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-us bg-gray-800 py-16 px-4 text-center rounded-md">
+        <h2 class="text-2xl font-semibold mb-8 text-gray-300">About Us</h2>
+        <p class="text-lg text-gray-400 max-w-3xl mx-auto">
+            We are a passionate team dedicated to creating exquisite jewellery that celebrates individuality and elegance.  Our pieces are crafted with the finest materials and exceptional attention to detail, ensuring that every piece is as unique as you are.
+        </p>
+    </section>
+
+    <section id="contact" class="contact-us py-16 px-4 text-center rounded-md">
+        <h2 class="text-2xl font-semibold mb-8 text-gray-300">Contact Us</h2>
+        <p class="text-lg text-gray-400 mb-4">Email: bhartijewellery@gmail.com</p>
+        <p class="text-lg text-gray-400">Phone: +123 456 7890</p>
+    </section>
+
+    <footer class="bg-gray-900 text-white py-4 text-center rounded-md">
+        <p>© BHARTI JEWELLERY.</p>
+    </footer>
+
+    <script>
+        const addToCartButtons = document.querySelectorAll('.add-to-cart');
+
+        addToCartButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const productCard = but

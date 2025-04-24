@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Create Account</title>
+  <style>
+    body {
+      background-color: #1e1e2f;
+      font-family: Arial, sans-serif;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      background-color: #2a2a3c;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+      width: 350px;
+    }
+
+    h2 {
+      margin-bottom: 10px;
+    }
+
+    .input-group {
+      margin-bottom: 15px;
+    }
+
+    .input-group input {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 8px;
+      background-color: #1e1e2f;
+      color: #fff;
+    }
+
+    .input-half {
+      display: flex;
+      gap: 10px;
+    }
+
+    .checkbox-group {
+      display: flex;
+      align-items: center;
+      font-size: 0.9em;
+      margin-bottom: 20px;
+    }
+
+    .checkbox-group input {
+      margin-right: 10px;
+    }
+
+    .checkbox-group a {
+      color: #a586ff;
+      text-decoration: none;
+    }
+
+    .btn {
+      width: 100%;
+      background-color: #7a5eff;
+      border: none;
+      padding: 12px;
+      color: white;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .divider {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .social-buttons {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .social-buttons button {
+      width: 48%;
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #555;
+      background-color: #1e1e2f;
+      color: white;
+      cursor: pointer;
+    }
+
+    .login-link {
+      font-size: 0.9em;
+      margin-bottom: 20px;
+    }
+
+    .login-link a {
+      color: #a586ff;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Create an account</h2>
+    <div class="login-link">
+      Already have an account? <a href="LOGIN.html">Log in</a>
+    </div>
+
+    <div class="input-group input-half">
+      <input type="text" placeholder="First name" value="First Name">
+      <input type="text" placeholder="Last Name">
+    </div>
+
+    <div class="input-group">
+      <input type="email" placeholder="Email">
+    </div>
+
+    <div class="input-group">
+      <input type="password" placeholder="Enter your password">
+    </div>
+
+    <div class="checkbox-group">
+      <input type="checkbox" id="terms" />
+      <label for="terms">I agree to the <a href="#">Terms & Conditions</a></label>
+    </div>
+
+    <button class="btn">Create account</button>
+
+    <div class="divider">or register with</div>
+
+    <div class="social-buttons">
+      <button>Google</button>
+      <button>Apple</button>
+    </div>
+  </div>
+</body>
+</html>
+

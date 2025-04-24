@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jewellery Shop</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-black">
+    <header class="bg-white shadow-md py-4">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <a href="#" class="text-xl font-semibold text-gray-800">
+                <span class="text-yellow-500">BJ BHARTI JEWELLERY</span>
+            </a>
+            <div class="flex items-center gap-4">
+                <a href="#" class="text-gray-700 hover:text-yellow-500 transition duration-300">BHARTI</a>
+                <a href="index.html" class="text-gray-700 hover:text-yellow-500 transition duration-300"> JEWELLERY</a>
+            </div>
+            <nav class="hidden md:block">
+                <ul class="flex space-x-6">
+                    <li><a href="index.html" class="text-gray-700 hover:text-yellow-500 transition duration-300">Home</a></li>
+                    <li><a href="LOGIN.html" class="text-gray-700 hover:text-yellow-500 transition duration-300">LOGIN</a></li>
+                    <li><a href="#" class="text-gray-700 hover:text-yellow-500 transition duration-300">About Us</a></li>
+                    <li><a href="#" class="text-gray-700 hover:text-yellow-500 transition duration-300">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-700 hover:text-yellow-500 focus:outline-none focus:shadow-outline">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                </button>
+                <div id="mobile-menu" class="hidden absolute top-16 right-0 bg-white shadow-lg rounded-md py-2 px-4 space-y-2">
+                    <a href="index.html" class="block text-gray-700 hover:text-yellow-500 transition duration-300">Home</a>
+                    <a href="index.html" class="block text-gray-700 hover:text-yellow-500 transition duration-300">Collections</a>
+                    <a href="#" class="block text-gray-700 hover:text-yellow-500 transition duration-300">About Us</a>
+                    <a href="#" class="block text-gray-700 hover:text-yellow-500 transition duration-300">Contact</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="bg-yellow-100 py-6">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-lg text-gray-700">Special Offer: 20% off on your first purchase! Use code FIRST20</p>
+        </div>
+    </section>
+
+    <section class="bg-yellow-100 py-20">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-3xl font-semibold text-gray-800 mb-4"> BHARTI JEWELLERY</h1>
+            <p class="text-lg text-gray-600 mb-8">Crafted with passion and precision, for every special moment.</p>
+            <button class="bg-yellow-500 hover:bg-yellow-600 text-white font-semibold py-3 px-6 rounded-full transition duration-300">
+                Explore Bharti jewellery Collections
+            </button>
+        </div>
+    </section>
+
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-semibold text-gray-800 text-center mb-8">BHARTI JEWELLERY COLLECTIONS</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden" data-product-name="Rings" data-product-price="250">
+                    <img src="images/product/28.jpg" alt="Rings Collection" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Rings</h3>
+                        <p class="text-gray-600 mb-4">Elegant rings for every occasion.</p>
+                        <div class="flex items-center justify-between mt-4">
+                            <span class="text-gray-700 font-semibold">$250</span>
+                            <button class="bg-yellow-500 hover:bg-yellow-600 text-white font-semibold py-2 px-4 rounded-full transition duration-300 text-sm add-to-cart-button">
+                                Add to Cart
+                            </button>
+                            <button class="bg-yellow-500 hover:bg-yellow-600 text-white font-semibold py-2 px-4 rounded-full transition duration-300 text-sm buy-now-button">
+                                Buy Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden" data-product-name="Necklaces" data-product-price="350">
+                    <img src="images/product/33.jpg" alt="Necklaces Collection" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Necklaces</h3>
+                        <p class="text-gray-600 mb-4">Stunning necklaces to elevate your style.</p>
+                         <div class="flex items-center justify-between mt-4">
+                            <span class="text-gray-700 font-semibold">$350</span>
+                            <button class="bg-yellow-500 hover:bg-yellow-600 text-white font-semibold py-2 px-4 rounded-full transition duration-300 text-sm add-to-cart-button">
+                                Add to Cart
+                            </button>
+                            <button class="bg-yellow-500 hover:bg-yellow-600 text-white font-semibold py-2 px-4 rounded-full transition duration-300 text-sm buy-now-button">
+                                Buy Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden" data-product-name="Earrings" data-product-price="150">
+                    <img src="images/product/35.jpg" alt="Earrings Collection" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Earrings</h3>
+                        <p class="text-gray-600 mb-4">Beautiful earrings to complement your look.</p>
+                        <div class="flex items-center justify-between mt-4">
+                            <span class="text-gray-700 font-semibold">$150</span>
+                            <button class="bg-yellow-500 hover:bg-yellow-600 text-white font-semibold py-2 px-4 rounded-full transition duration-300 text-sm add-to-cart-button">
+                                Add to Cart
+                            </button>
+                            <button class="bg-yellow-500 hover:bg-yellow-600 text-white font-semibold py-2 px-4 rounded-full transition duration-300 text-sm buy-now-button">
+                                Buy Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden" data-product-name="Bracelets" data-product-price="200">
+                    <img src="images/product/38.jpg" alt="Bracelets Collection" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Bracelets</h3>
+                        <p class="text-gray-600 mb-4">Elegant bracelets for every occasion.</p>
+                        <div class="flex items-center justify-between mt-4">
+                            <span class="text-gray-700 font-semibold">$200</span>
+                            <button class="bg-yellow-500 hover:bg-yellow-600 text-white font-semibold py-2 px-4 rounded-full transition duration-300 text-sm add-to-cart-button">
+                                Add to Cart
+                            </button>
+                            <button class="bg-yellow-500 hover:bg-yellow-600 text-white font-semibold py-2 px-4 rounded-full transition duration-300 text-sm buy-now-button">
+                                Buy Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden" data-product-name="Brooches" data-product-price="400">
+                    <img src="images/product/42.jpg" alt="Brooches Collection" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Brooches</h3>
+                        <p class="text-gray-600 mb-4">Stunning brooches to elevate your style.</p>
+                        <div class="flex items-center justify-between mt-4">
+                            <span class="text-gray-700 font-semibold">$400</span>
+                            <button class="bg-yellow-500 hover:bg-yellow-600 text-white font-semibold py-2 px-4 rounded-full transition duration-300 text-sm add-to-cart-button">
+                                Add to Cart
+                            </button>
+                            <button class="bg-yellow-500 hover:bg-yellow-600 text-white font-semibold py-2 px-4 rounded-full transition duration-300 text-sm buy-now-button">
+                                Buy Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden" data-prodpendantuct-name="Pendants" data-product-price="300">
+                    <img src="images/product/43.jpg" alt="Pendants Collection" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Pendants</h3>
+                        <p class="text-gray-600 mb-4">Beautiful pendants to complement your look.</p>
+                        <div class="flex items-center justify-between mt-4">
+                            <span class="text-gray-700 font-semibold">$300</span>
+                            <button class="bg-yellow-500 hover:bg-yellow-600 text-white font-semibold py-2 px-4 rounded-full transition duration-300 text-sm add-to-cart-button">
+                                Add to Cart
+                            </button>
+                            <button class="bg-yellow-500 hover:bg-yellow-600 text-white font-semibold py-2 px-4 rounded-full transition duration-300 text-sm buy-now-button">
+                                Buy Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden" data-product-name="Tiaras" data-product-price="500">
+                    <img src="images/blog/2.jpg" alt="Tiaras Collection" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Tiaras</h3>
+                        <p class="text-gray-600 mb-4">Elegant tiaras for every occasion.</p>
+                        <div class="flex items-center justify-between mt-4">
+                            <span class="text-gray-700 font-semibold">$500</span>
+                            <button class="bg-yellow-500 hover:bg-yellow-600 text-white font-semibold py-2 px-4 rounded-full transition duration-300 text-sm add-to-cart-button">
+                                Add to Cart
+                            </button>
+                            <button class="bg-yellow-500 hover:bg-yellow-600 text-white font-semibold py-2 px-4 rounded-full transition duration-300 text-sm buy-now-button">
+                                Buy Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden" data-product-name="Cufflinks" data-product-price="220">
+                    <img src="images/blog/3.jpg" alt="Cufflinks Collection" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Cufflinks</h3>
+                        <p class="text-gray-600 mb-4">Stunning cufflinks to elevate your style.</p>
+                        <div class="flex items-center justify-between mt-4">
+                            <span class="text-gray-700 font-semibold">$220</span>
+                            <button class="bg-yellow-500 hover:bg-yellow-600 text-white font-semibold py-2 px-4 rounded-full transition duration-300 text-sm add-to-cart-button">
+                                Add to Cart
+                            </button>
+                            <button class="bg-yellow-500 hover:bg-yellow-600 text-white font-semibold py-2 px-4 rounded-full transition duration-300 text-sm buy-now-button">
+                                Buy Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden" data-product-name="Anklets" data-product-price="180">
+                    <img src="images/banner/1.jpg" alt="Anklets Collection" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Anklets</h3>
+                        <p class="text-gray-600 mb-4">Beautiful anklets to complement your look.</p>
+                        <div class="flex items-center justify-between mt-4">
+                            <span class="text-gray-700 font-semibold">$180</span>
+                            <button class="bg-yellow-500 hover:bg-yellow-600 text-white font-semibold py-2 px-4 rounded-full transition duration-300 text-sm add-to-cart-button">
+                                Add to Cart
+                            </button>
+                            <button class="bg-yellow-500 hover:bg-yellow-600 text-white font-semibold py-2 px-4 rounded-full transition duration-300 text-sm buy-now-button">
+                                Buy Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden" data-product-name="Hair Clips" data-product-price="120">
+                    <img src="images/product/11.jpg" alt="Hair Clips Collection" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Hair Clips</h3>
+                        <p class="text-gray-600 mb-4">Elegant hair clips for every occasion.</p>
+                        <div class="flex items-center justify-between mt-4">
+                            <span class="text-gray-700 font-semibold">$120</span>
+                            <button class="bg-yellow-500 hover:bg-yellow-600 text-white font-semibold py-2 px-4 rounded-full transition duration-300 text-sm add-to-cart-button">
+                                Add to Cart
+                            </button>
+                            <button class="bg-yellow-500 hover:bg-yellow-600 text-white font-semibold py-2 px-4 rounded-full transition duration-300 text-sm buy-now-button">
+                                Buy Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-yellow-100 py-16">
+        <div class="container mx-auto px-4 grid md:grid-cols-2 gap-8 items-center">
+            <div>
+                <h2 class="text-2xl font-semibold text-gray-800 mb-4">About Us</h2>
+                <p class="text-gray-600">
+                    We are a passionate team of artisans dedicated to creating exquisite jewellery
+                    that celebrates life's precious moments. With years of experience and a
+                    commitment to quality, we strive to offer уникальные and timeless pieces
+                    that you'll cherish forever.
+                </p>
+                <a href="#" class="text-yellow-500 hover:text-yellow-600 transition duration-300 mt-4 inline-block">Learn More</a>
+            </div>
+            <img src="https://source.unsplash.com/random/400x300/?jewelry,craft" alt="About Us" class="rounded-lg shadow-md">
+        </div>
+    </section>
+
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-semibold text-gray-800 text-center mb-8">What Our Customers Say</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <p class="text-gray-600 mb-4 italic">
+                        "I absolutely love my new ring! The craftsmanship is exceptional,
+                        and it's even more beautiful in person. Thank you!"
+                    </p>
+                    <p class="text-gray-700 font-semibold">- Sarah M.</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <p class="text-gray-600 mb-4 italic">
+                        "The necklace I purchased as a gift was a huge hit.  It was
+                        delivered quickly and the packaging was beautiful."
+                    </p>
+                    <p class="text-gray-700 font-semibold">- John K.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-gray-100 py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Contact Us</h2>
+            <p class="text-gray-600 mb-8">
+                Have a question or need assistance?  Reach out to us today.
+            </p>
+            <button class="bg-yellow-500 hover:bg-yellow-600 text-white font-semibold py-3 px-6 rounded-full transition duration-300">
+                Get in Touch
+            </button>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; BHARTI JEWELLERY</p>
+        </div>
+    </footer>
+
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        if (mobileMenuButton && mobileMenu) {
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+
+        const addToCartButtons = document.querySelectorAll('.add-to-cart-button');
+        addToCartButtons.forEach(button => {
+            button.addEventListener('click', (event) => {
+                const productElement = event.target.closest('.bg-white'); // Find the parent product container
+                if (productElement) {
+                    const productName = productElement.getAttribute('data-product-name');
+                    const productPrice = productElement.getAttribute('data-product-price');
+                    alert(`Adding ${productName} to cart for $${productPrice}!`);
+                    // Here, you would typically send this data to a server or store it in local storage.
+                    // For this example, we'll just display an alert.
+                }
+            });
+        });
+
+        const buyNowButtons = document.querySelectorAll('.buy-now-button');
+        buyNowButtons.forEach(button => {
+            button.addEventListener('click', (event) => {
+                const productElement = event.target.closest('.bg-white');  // Find the parent product container
+                 if (productElement) {
+                    const productName = productElement.getAttribute('data-product-name');
+                    const productPrice = productElement.getAttribute('data-product-price');
+                    alert(`Buying ${productName} for $${productPrice}!`);
+                    //  You would redirect the user to a checkout page.
+                }
+            });
+        });
+    </script>
+</body>
+</html>
